@@ -346,22 +346,13 @@
             CSV_CURRENCY_TEMPLATE: !0,
             CSV_INTEGRATION_CURRENCY_TEMPLATE: !0,
             DOWNLOAD_FILES_FAKE_DATA: !0,
-            DOWNLOAD_FILES_KEY_PATH: !0,
             DOWNLOAD_FILES_EDITABLE_FIELDS: !0,
-            SUBSCRIPTION_INTERVAL_ENUM: !0,
             SUBSCRIPTION_STATUS_ENUM: !0,
             STRIPE_SUBSCRIPTION_STATUS_ENUM: !0,
             ACTIVE_STRIPE_SUBSCRIPTION_STATUSES: !0,
             ECOMMERCE_PROVIDER_NAME_ENUM: !0,
             BILLING_METHOD_TYPES: !0,
-            PHYSICAL_PRODUCT_TYPE: !0,
-            DIGITAL_PRODUCT_TYPE: !0,
-            SERVICE_PRODUCT_TYPE: !0,
-            MEMBERSHIP_PRODUCT_TYPE: !0,
             ADVANCED_PRODUCT_TYPE: !0,
-            TEMPLATE_PRODUCT_TYPES: !0,
-            PRODUCT_TYPE_HELP_TEXT: !0,
-            DEFAULT_PRODUCT_TYPE_ID: !0,
             DISCOUNTS_CSV_IMPORT_EXPORT_COLUMNS: !0,
             REQUIRED_DISCOUNT_IMPORT_FIELDS: !0,
             STRIPE_DISCONNECT_SUBSCRIPTIONS_ERROR_MESSAGE: !0,
@@ -374,7 +365,7 @@
             get: function () {
                 return l.PRODUCTS_BINDING_CONTEXT_EXTERNAL_KEY
             }
-        }), t.SUBSCRIPTION_SORT_MODES = t.ORDER_SORT_MODES = t.STRIPE_DISCONNECT_SUBSCRIPTIONS_ERROR_MESSAGE = t.REQUIRED_DISCOUNT_IMPORT_FIELDS = t.DISCOUNTS_CSV_IMPORT_EXPORT_COLUMNS = t.DEFAULT_PRODUCT_TYPE_ID = t.PRODUCT_TYPE_HELP_TEXT = t.TEMPLATE_PRODUCT_TYPES = t.ADVANCED_PRODUCT_TYPE = t.MEMBERSHIP_PRODUCT_TYPE = t.SERVICE_PRODUCT_TYPE = t.DIGITAL_PRODUCT_TYPE = t.PHYSICAL_PRODUCT_TYPE = t.BILLING_METHOD_TYPES = t.ECOMMERCE_PROVIDER_NAME_ENUM = t.ACTIVE_STRIPE_SUBSCRIPTION_STATUSES = t.STRIPE_SUBSCRIPTION_STATUS_ENUM = t.SUBSCRIPTION_STATUS_ENUM = t.SUBSCRIPTION_INTERVAL_ENUM = t.DOWNLOAD_FILES_EDITABLE_FIELDS = t.DOWNLOAD_FILES_KEY_PATH = t.DOWNLOAD_FILES_FAKE_DATA = t.CSV_INTEGRATION_CURRENCY_TEMPLATE = t.CSV_CURRENCY_TEMPLATE = t.DEFAULT_PRICE_TEMPLATE_VALUE = t.PRICE_TEMPLATE_OPTIONS = t.PRICE_TEMPLATE_CURRENCY_CODE = t.PRICE_TEMPLATE_AMOUNT = t.PRICE_TEMPLATE_CURRENCY_SYMBOL = t.MAX_SEARCH_LIMIT = t.MAX_MEMBERSHIP_PRODUCTS = t.MAX_PRODUCT_DIMENSION = t.MAX_TOTAL_ORDER_PRICE = t.INFINITE_INVENTORY = t.INVENTORY_TYPE_INFINITE = t.INVENTORY_TYPE_FINITE = t.DEFAULT_TAX_CATEGORY = t.SHIPPING_METHODS = t.ORDER_ID_RE = void 0;
+        }), t.SUBSCRIPTION_SORT_MODES = t.ORDER_SORT_MODES = t.STRIPE_DISCONNECT_SUBSCRIPTIONS_ERROR_MESSAGE = t.REQUIRED_DISCOUNT_IMPORT_FIELDS = t.DISCOUNTS_CSV_IMPORT_EXPORT_COLUMNS = t.ADVANCED_PRODUCT_TYPE = t.BILLING_METHOD_TYPES = t.ECOMMERCE_PROVIDER_NAME_ENUM = t.ACTIVE_STRIPE_SUBSCRIPTION_STATUSES = t.STRIPE_SUBSCRIPTION_STATUS_ENUM = t.SUBSCRIPTION_STATUS_ENUM = t.DOWNLOAD_FILES_EDITABLE_FIELDS = t.DOWNLOAD_FILES_FAKE_DATA = t.CSV_INTEGRATION_CURRENCY_TEMPLATE = t.CSV_CURRENCY_TEMPLATE = t.DEFAULT_PRICE_TEMPLATE_VALUE = t.PRICE_TEMPLATE_OPTIONS = t.PRICE_TEMPLATE_CURRENCY_CODE = t.PRICE_TEMPLATE_AMOUNT = t.PRICE_TEMPLATE_CURRENCY_SYMBOL = t.MAX_SEARCH_LIMIT = t.MAX_MEMBERSHIP_PRODUCTS = t.MAX_PRODUCT_DIMENSION = t.MAX_TOTAL_ORDER_PRICE = t.INFINITE_INVENTORY = t.INVENTORY_TYPE_INFINITE = t.INVENTORY_TYPE_FINITE = t.DEFAULT_TAX_CATEGORY = t.SHIPPING_METHODS = t.ORDER_ID_RE = void 0;
         var c = i(n(11)),
             u = i(n(695)),
             s = n(711);
@@ -459,21 +450,11 @@
         t.CSV_CURRENCY_TEMPLATE = E;
         var v = [b(M), " ", b(h)].join("");
         t.CSV_INTEGRATION_CURRENCY_TEMPLATE = v;
-        t.DOWNLOAD_FILES_FAKE_DATA = [{
-            id: "5d8fcb6d94dd1853060fb3b3",
-            name: "The modern web design process - Webflow Ebook.pdf",
-            url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8a680b972888929747b_The%20modern%20web%20design%20process%20-%20Webflow%20Ebook.pdf"
-        }, {
-            id: "5d8fcb6d94dd1853060fb3b4",
-            name: "The freelance web designers guide - Webflow Ebook.pdf",
-            url: "https://assets-global.website-files.com/5cf6b7202bf8199f50d43e6c/5e9dd8e6abe52b33243a22cf_The%20freelance%20web%20designer%E2%80%99s%20guide%20-%20Webflow%20Ebook.pdf"
-        }];
         t.DOWNLOAD_FILES_KEY_PATH = "download-files";
         t.DOWNLOAD_FILES_EDITABLE_FIELDS = {
             name: !0,
             url: !0
         };
-        t.SUBSCRIPTION_INTERVAL_ENUM = ["day", "week", "month", "year"];
         t.SUBSCRIPTION_STATUS_ENUM = {
             active: "active",
             pastdue: "pastdue",
@@ -504,157 +485,11 @@
             subscription: "subscription",
             oneTime: "one-time"
         };
-        var O = [{
-                fieldSlug: "name",
-                required: !0
-            }, {
-                fieldSlug: "slug",
-                required: !0
-            }, {
-                fieldSlug: "sku-properties",
-                required: !1
-            }, {
-                fieldSlug: "category",
-                required: !1
-            }, {
-                fieldSlug: "description",
-                required: !1
-            }, {
-                fieldSlug: "tax-category",
-                required: !1
-            }, {
-                fieldSlug: "default-sku",
-                required: !1
-            }, {
-                fieldSlug: "ec-product-type",
-                required: !1
-            }, {
-                fieldSlug: "options",
-                required: !1
-            }],
-            T = [{
-                fieldSlug: "sku-values",
-                required: !1
-            }, {
-                fieldSlug: "product",
-                required: !1
-            }, {
-                fieldSlug: "main-image",
-                required: !1
-            }, {
-                fieldSlug: "more-images",
-                required: !1
-            }, {
-                fieldSlug: "price",
-                required: !0
-            }, {
-                fieldSlug: "compare-at-price",
-                required: !1
-            }, {
-                fieldSlug: "ec-sku-subscription-plan",
-                required: !1
-            }, {
-                fieldSlug: "sku",
-                required: !1
-            }, {
-                fieldSlug: "ec-sku-billing-method",
-                required: !1
-            }, {
-                fieldSlug: "track-inventory",
-                required: !1
-            }, {
-                fieldSlug: "quantity",
-                required: !1
-            }],
-            N = {
-                name: "Physical",
-                id: "ff42fee0113744f693a764e3431a9cc2",
-                fields: {
-                    product: [].concat(O, [{
-                        fieldSlug: "shippable",
-                        required: !1
-                    }]),
-                    sku: [].concat(T, [{
-                        fieldSlug: "weight",
-                        required: !1
-                    }, {
-                        fieldSlug: "width",
-                        required: !1
-                    }, {
-                        fieldSlug: "height",
-                        required: !1
-                    }, {
-                        fieldSlug: "length",
-                        required: !1
-                    }])
-                }
-            };
-        t.PHYSICAL_PRODUCT_TYPE = N;
-        var S = {
-            name: "Digital",
-            id: "f22027db68002190aef89a4a2b7ac8a1",
-            fields: {
-                product: [].concat(O),
-                sku: [].concat(T, [{
-                    fieldSlug: "download-files",
-                    required: !0
-                }])
-            }
-        };
-        t.DIGITAL_PRODUCT_TYPE = S;
-        var R = {
-            name: "Service",
-            id: "c599e43b1a1c34d5a323aedf75d3adf6",
-            fields: {
-                product: [].concat(O),
-                sku: [].concat(T)
-            }
-        };
-        t.SERVICE_PRODUCT_TYPE = R;
-        var C = {
-            name: "Membership",
-            id: "e348fd487d0102946c9179d2a94bb613",
-            fields: {
-                product: [].concat(O, [{
-                    fieldSlug: "shippable",
-                    required: !1
-                }]),
-                sku: [].concat(T, [{
-                    fieldSlug: "weight",
-                    required: !1
-                }, {
-                    fieldSlug: "width",
-                    required: !1
-                }, {
-                    fieldSlug: "height",
-                    required: !1
-                }, {
-                    fieldSlug: "length",
-                    required: !1
-                }, {
-                    fieldSlug: "download-files",
-                    required: !1
-                }, {
-                    fieldSlug: "include-downloads",
-                    required: !1
-                }])
-            }
-        };
-        t.MEMBERSHIP_PRODUCT_TYPE = C;
         var I = {
             name: "Advanced",
             id: "b6ccc1830db4b1babeb06a9ac5f6dd76"
         };
         t.ADVANCED_PRODUCT_TYPE = I;
-        var L = [N, S, R, C, I];
-        t.TEMPLATE_PRODUCT_TYPES = L;
-        L.reduce(function (e, t) {
-            return e[t.id] = "", e
-        }, {});
-        var D = (r = {}, (0, o.default)(r, N.id, "Physical products are shipped to the customer (e.g., merchandise, apparel)."), (0, o.default)(r, S.id, "Digital products are immediately downloadable by the customer after checkout (e.g., audio files, ebooks)."), (0, o.default)(r, R.id, "Service products do not require a shipping address during checkout (e.g., classes, consultations)."), (0, o.default)(r, C.id, "Membership products are recurring or one-time payment products that give you access to gated content (e.g., subscriptions, one-time membership fee). Membership products require a user login and can only be purchased once."), (0, o.default)(r, I.id, "Advanced products provide all available customizable options."), r);
-        t.PRODUCT_TYPE_HELP_TEXT = D;
-        var w = N.id;
-        t.DEFAULT_PRODUCT_TYPE_ID = w;
         t.DISCOUNTS_CSV_IMPORT_EXPORT_COLUMNS = ["name", "code", "notes", "type", "percentOff", "amountOff", "validOn", "expiresOn", "enabled", "orderMinimum", "totalUsage", "maxAmountOff", "usage.limit.total", "usage.limit.customer", "appliesTo.scope", "appliesTo.filter", "appliesTo.applyOnce"];
         t.REQUIRED_DISCOUNT_IMPORT_FIELDS = ["name", "code", "type", ["percentOff", "amountOff"]];
         t.STRIPE_DISCONNECT_SUBSCRIPTIONS_ERROR_MESSAGE = "Stripe disconnect attempted with non-canceled subscriptions";
@@ -44390,7 +44225,7 @@
 ]);
 /**
  * ----------------------------------------------------------------------
- * Webflow: Interactions 2.0: Init
+ * hpca.cloud: Interactions: Init
  */
 Webflow.require('ix2').init({
     "events": {
