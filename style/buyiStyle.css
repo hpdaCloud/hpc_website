@@ -2674,6 +2674,11 @@
      line-height: 106%;
      font-weight: 500;
      letter-spacing: -1.4px;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     background: linear-gradient(
+90deg,#f7bf2a,#f26e7e 18.23%,#be5188 38.02%,#8a3391 53.65%,#805ac3 74.48%,#7682f4);
+     -webkit-background-clip: text;
    }
    
    h2 {
@@ -2717,14 +2722,21 @@
    }
    
    h6 {
-     margin-top: 0px;
-     margin-bottom: 18px;
-     color: #fff;
-     font-size: 24px;
-     line-height: 130%;
-     font-weight: 500;
-     letter-spacing: -0.5px;
-   }
+    margin-top: 0px;
+    margin-bottom: 18px;
+    color: #fff;
+    font-size: 24px;
+    line-height: 130%;
+    font-weight: 500;
+    letter-spacing: -0.5px;
+    background-image: linear-gradient(
+92.03deg,#15cefe 13.82%,#d080d4 87.25%);
+    -webkit-text-fill-color: transparent;
+    -webkit-background-clip: text;
+    -moz-background-clip: text;
+    text-shadow: none;
+  }
+  
    
    p {
      margin-bottom: 32px;
@@ -2914,7 +2926,7 @@
    }
    
    .nav-link.w--current {
-     color: rgba(216, 223, 233, 0.8);
+     color:#0082f3;
    }
    
    .nav-link.w--current:hover {
@@ -3265,6 +3277,11 @@
      font-weight: 500;
      letter-spacing: 2px;
      text-transform: uppercase;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     background: linear-gradient(
+90deg,#f7bf2a,#f26e7e 18.23%,#be5188 38.02%,#8a3391 53.65%,#805ac3 74.48%,#7682f4);
+     -webkit-background-clip: text;
    }
    
    .grid-features {

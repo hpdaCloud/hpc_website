@@ -2714,6 +2714,13 @@
      line-height: 120%;
      font-weight: 500;
      letter-spacing: -0.5px;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     background: linear-gradient(
+90deg,#f7bf2a,#f26e7e 18.23%,#be5188 38.02%,#8a3391 53.65%,#805ac3 74.48%,#7682f4);
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     text-shadow: none;
    }
    
    h6 {
@@ -2724,6 +2731,12 @@
      line-height: 130%;
      font-weight: 500;
      letter-spacing: -0.5px;
+     background-image: linear-gradient(
+92.03deg,#15cefe 13.82%,#d080d4 87.25%);
+     -webkit-text-fill-color: transparent;
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     text-shadow: none;
    }
    
    p {
@@ -3016,7 +3029,7 @@
    }
    
    .heading-hero {
-     max-width: 960px;
+     max-width: 1024px;
      font-size: 92px;
      line-height: 103%;
    }
@@ -3083,9 +3096,9 @@
    
    .figure-a1 {
      position: absolute;
-     width: 100%;
-     height: 100%;
-     background-image: linear-gradient(220deg, rgba(0, 0, 0, 0.8), transparent), linear-gradient(50deg, #3183ff, transparent);
+     /* width: 100%; */
+     /* height: 100%; */
+     background-image: linear-gradient(220deg, rgba(0, 0, 0, 0.8), transparent), linear-gradient(50deg, #0166ff, transparent);
      opacity: 0.5;
      -webkit-filter: blur(5px);
      filter: blur(5px);
@@ -3265,6 +3278,13 @@
      font-weight: 500;
      letter-spacing: 2px;
      text-transform: uppercase;
+     -webkit-text-fill-color: transparent;
+     -moz-text-fill-color: transparent;
+     background: linear-gradient(
+90deg,#f7bf2a,#f26e7e 18.23%,#be5188 38.02%,#8a3391 53.65%,#805ac3 74.48%,#7682f4);
+     -webkit-background-clip: text;
+     -moz-background-clip: text;
+     text-shadow: none;
    }
    
    .grid-features {
